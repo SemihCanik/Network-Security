@@ -1,0 +1,4 @@
+STEP 2 
+
+Metasploit Framework'ü Başlatma
+msfconsole ile Metasploitte framework başlatılır.

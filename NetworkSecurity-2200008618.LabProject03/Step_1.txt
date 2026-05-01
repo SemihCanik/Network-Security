@@ -1,0 +1,18 @@
+Step 1
+
+Metasploitable'ın IP'sini buluruz. Kali ekranında terminal açılır ve şu komut yazılır 'nmap -sV -p 21 <Metasploitable_IP>'.
+benim yazdığım kod şudur = nmap -sV -p 21 192.168.56.11
+
+Metasploitable'a 192.168.56.10 IP adresini verdim. Aşağıdaki komutu kullandım.
+sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0
+
+Kali Linux'e IP Adresi atadım
+sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0
+
+Şimdi iki makine de aynı "odada" (192.168.56.x bloğunda). (Servis Keşfi)
+
+Hedef makineyle bağlantı kuruldu.
+
+Hedefte FTP servisi açık.
+
+En önemlisi, üzerinde "backdoor" zafiyeti barındıran vsftpd 2.3.4 sürümü çalışıyor.
